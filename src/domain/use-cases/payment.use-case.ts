@@ -44,7 +44,7 @@ export class PaymentService {
 
         const body = {
             items: [],
-            notification_url: "https://webhook.site/670b6138-30c4-4273-bdc1-c76200e06d5c",
+            notification_url: "https://webhook.site/57a6a830-fec0-49a9-95ca-ad8dc3144572",
             external_reference: `${paymentData.orderId}`,
         };
 

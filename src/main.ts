@@ -3,6 +3,7 @@ import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
+import helmet from 'helmet';
 
 async function bootstrap() {
 
@@ -21,6 +22,23 @@ async function bootstrap() {
 
   // Cria o servidor HTTP
   const app = await NestFactory.create(AppModule);
+
+  app.use(helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'"],
+        styleSrc: ["'self'"],
+        imgSrc: ["'self'", 'data:'],
+        connectSrc: ["'self'"],
+        fontSrc: ["'self'"],
+        objectSrc: ["'none'"],
+        frameSrc: ["'self'"],
+        baseUri: ["'self'"],
+        formAction: ["'self'"]
+      }
+    }
+  }));
 
   const port = process.env.PORT || 3030;
   await app.listen(port, () => {

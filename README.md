@@ -1,6 +1,8 @@
 # service-payment
 Repositorio que responsavel por lidar os pagamentos dos clientes ao realizar a entrega
 
+Ederson Ribeiro Paz
+
 OBS: Necessario ajustar arquivo.
 Foodie Production é um microsserviço projetado para gerenciar a fase de produção de pedidos de alimentos. Ele ouve eventos de pagamento de pedidos, atualiza o status do pedido para 'em produção' e se comunica com outros microsserviços para gerenciar o ciclo de vida da produção.
 
@@ -25,11 +27,10 @@ Foodie Production faz parte do projeto FoodieFlow, que visa otimizar o processo 
 
 ## Funcionalidades
 
-- Ouvir eventos de pagamento de pedidos
-- Atualizar status do pedido para 'em produção'
+- Ouvi a solicitação de covbrança do pedido
+- Atualiza dados de pagamento
 - Comunicar-se com outros microsserviços para gerenciar o ciclo de vida da produção do pedido
-- Listar todos os pedidos atualmente em produção
-- Marcar pedidos como 'pronto'
+- Envia informativo de pagamento
 
 ## Tecnologias Utilizadas
 
@@ -39,21 +40,23 @@ Foodie Production faz parte do projeto FoodieFlow, que visa otimizar o processo 
 - Jest (para testes)
 - Eslint e Prettier (para qualidade de código)
 - Docker
+- Mongodb
 
 ## Instalação
 
 ### Pré-requisitos
 
-- Node.js (>=14.x)
+- Node.js (>=v21.6.2)
 - npm (>=6.x) ou yarn
 - Docker (para ambiente containerizado)
+- Mongodb (conexao disponivel para aplicacao)
 
 ### Passos
 
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/emenezes93/foodie_production.git
+    git clone https://github.com/jobsonribeiro/service-payment
     cd foodie_production
     ```
 
@@ -65,11 +68,7 @@ Foodie Production faz parte do projeto FoodieFlow, que visa otimizar o processo 
     yarn install
     ```
 
-3. Configure as variáveis de ambiente:
-
-    Crie um arquivo `.env` no diretório raiz e configure-o com base no arquivo `.env.example`.
-
-4. Inicie a aplicação:
+3. Inicie a aplicação:
 
     ```bash
     npm run start:dev

@@ -9,11 +9,12 @@ export class PaymentQueueConsumer {
 
     @EventPattern('order_created')
     async handleOrderCreated(@Payload() data: any, @Ctx() context: RmqContext) {
-        const { clientId, status, id, products } = data;
-        console.log("payment queue");
+        const { clientId, clientName, clientEmail, status, id, products } = data;
         const totalAmount = products.reduce((acc, product) => acc + product.price * product.quantity, 0);
         const paymentData: PaymentDto = {
             clientId,
+            clientName,
+            clientEmail,
             status,
             orderId: id,
             totalAmount,

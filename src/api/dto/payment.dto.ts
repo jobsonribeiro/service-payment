@@ -1,5 +1,7 @@
 export class PaymentDto {
     clientId: number;
+    clientName: string;
+    clientEmail: string;
     status: string;
     orderId: number;
     totalAmount: number;

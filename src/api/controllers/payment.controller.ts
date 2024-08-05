@@ -19,18 +19,27 @@ export class PaymentController {
         const decodedContent = Buffer.from(content, 'base64').toString('utf-8');
         const requestBodyObject = JSON.parse(decodedContent);
         console.log(requestBodyObject);
+
+        const products = requestBodyObject.data.products.map((product: any) => ({
+            orderId: product.orderId,
+            productId: product.productId,
+            quantity: product.quantity,
+            id: product.id,
+            price: product.price,
+        }));
+
+        const totalAmount = products.reduce((total, product) => {
+            return total + (product.price * product.quantity);
+        }, 0);
+
         const paymentDto: PaymentDto = {
             clientId: requestBodyObject.data.clientId,
+            clientName: requestBodyObject.data.clientName,
+            clientEmail: requestBodyObject.data.clientEmail,
             status: requestBodyObject.data.status,
             orderId: requestBodyObject.data.id,
-            totalAmount: 100, // Set the correct total amount
-            products: requestBodyObject.data.products.map((product: any) => ({
-                orderId: product.orderId,
-                productId: product.productId,
-                quantity: product.quantity,
-                id: product.id,
-                price: 10, // Set the correct price
-            })),
+            totalAmount,
+            products,
         };
 
         return await this.paymentService.createPayment(paymentDto);

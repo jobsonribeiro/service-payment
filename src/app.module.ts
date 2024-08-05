@@ -20,8 +20,8 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         name: 'PAYMENT_SERVICE',
         transport: Transport.RMQ,
         options: {
-          urls: [process.env.RABBITMQ_URI],
-          queue: 'order_queue',
+          urls: [process.env.URL_AMQP],
+          queue: process.env.ORDER_QUEUE,
           queueOptions: {
             durable: false
           },

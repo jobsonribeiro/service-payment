@@ -1,6 +1,6 @@
             Dentro do seu código, o ReadMe deve conter:
-              Instruções para rodar a sua aplicação, usando o orquestrador de container que preferir;
-              Justificativa do padrão SAGA escolhido;
+              Instruções para rodar a sua aplicação, usando o orquestrador de container que preferir; Ajustar!
+              Justificativa do padrão SAGA escolhido; OK
               Links com os relatórios dos processamentos do OWASP ZAP (antes e após a correção);
               Link com o relatório RIPD do sistema;
               Link para o desenho da arquitetura;
@@ -216,8 +216,19 @@ O SAGA coreografado permite que os microsserviços possam coordenar suas ações
 
 Desta forma a independência e autonomia permite uma maior escalabilidade horizontal, já que podem ser escalados horizontalmente, adicionando ou removendo instâncias conforme a demanda de cada serviço. Isso permite um ajuste dinâmico dos recursos do sistema, melhorando a capacidade de lidar com picos de carga. Como também podem continuar operando independentemente dos outros, isto é, se um serviço falhar, os outros continuam garantindo a sua continuidade sem interrupções. Além de implementar sua própria lógica de compensação, adaptando-se às suas necessidades específicas dando também um maior grau de especialização dos serviços, facilitando a manutenção, a evolução do sistema e personalizar cada comportamento de acordo com os requisitos do negócio mais facilmente.
 
-##Utilização do RabbitMQ
+## Utilização do RabbitMQ
 O RabbitMQ foi escolhido como sistema principal de mensageria por suportar diferentes padrões de mensagens (fila, publicação/assinatura, etc.), permitindo a implementação de diversas estratégias de comunicação e facilitando a integração entre serviços heterogêneos, oferecendo também ferramentas avançadas de monitoramento e gerenciamento, permitindo uma visão detalhada do fluxo de mensagens e facilitando a detecção e resolução de problemas.
 
 ## Conclusão
 A adoção do SAGA coreografado em conjunto com o RabbitMQ proporciona uma solução técnica robusta para a coordenação de transações distribuídas em ambientes de microsserviços. Essa combinação oferece uma arquitetura escalável, resiliente e flexível, capaz de atender às demandas de sistemas complexos, dinâmicos e com serviços mais independentes.
+
+## Links com os relatórios dos processamentos do OWASP ZAP (antes e após a correção);
+Antes da correção: https://github.com/jobsonribeiro/service-payment/tree/dev/Relatorio/2024-07-02-ZAP-Report-
+Após correção: https://github.com/jobsonribeiro/service-payment/tree/dev/Relatorio/2024-07-04-ZAP-Report-
+
+## Link com o relatório RIPD do sistema;
+Verificar com o grupo o que seria.
+## Link para o desenho da arquitetura;
+Pegar com o Guilherme.
+## Link para um vídeo com:
+Precisa ser produzido.

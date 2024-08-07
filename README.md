@@ -1,14 +1,3 @@
-            Dentro do seu código, o ReadMe deve conter:
-              Instruções para rodar a sua aplicação, usando o orquestrador de container que preferir; Ajustar!
-              Justificativa do padrão SAGA escolhido; OK
-              Links com os relatórios dos processamentos do OWASP ZAP (antes e após a correção);
-              Link com o relatório RIPD do sistema;
-              Link para o desenho da arquitetura;
-              Link para um vídeo com:
-                O projeto rodando, inclusive com o padrão SAGA funcionando;
-                Explicação do padrão SAGA escolhido e sua justificativa;
-                Arquitetura da estrutura da nuvem e como a comunicação SAGA está montada.
-
 # service-payment
 Repositorio que responsavel por lidar com os pagamentos dos clientes ao realizar a entrega
 

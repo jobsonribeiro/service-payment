@@ -21,14 +21,14 @@ Repositorio que responsavel por lidar com os pagamentos dos clientes ao realizar
 - [Utilização de SAGA Coreografada com RabbitMQ](utilização-de-SAGA-Coreografada-com-RabbitMQ)
 ## Introdução
 
-Foodie service-payment é um microsserviço projetado para gerenciar a fase de pagamento dos pedidos. Ele escuta eventos de solicitação de pagamento, atualizando o status do pedido para '' e se comunica com outros microsserviços para gerenciar o ciclo de vida da produção.
+Foodie service-payment é um microsserviço projetado para gerenciar a fase de pagamento dos pedidos. Ele escuta eventos de solicitação de pagamento, atualizando o status do pedido para 'approved' ou 'cancelled'.
 
 ## Funcionalidades
 
-- Ouvi a solicitação de covbrança do pedido
-- Atualiza dados de pagamento
-- Comunicar-se com outros microsserviços para gerenciar o ciclo de vida da produção do pedido
-- Envia informativo de pagamento
+- Escuta a fila de criação de pedido
+- Cria e confirma o pagamento
+- Notifica o cliente sobre o status do pedido
+- Notifica a fila de pagamento confirmada
 
 ## Tecnologias Utilizadas
 
@@ -76,7 +76,7 @@ Foodie service-payment é um microsserviço projetado para gerenciar a fase de p
 
 ## Uso
 
-Para executar a aplicação em um ambiente de desenvolvimento, use o comando de start como mostrado acima. Isso iniciará o servidor e monitorará mudanças nos arquivos.
+Para executar a aplicação em um ambiente de desenvolvimento, use o comando de start como mostrado acima. Isso iniciará o servidor.
 
 Para produção, construa a aplicação e inicie-a usando:
 

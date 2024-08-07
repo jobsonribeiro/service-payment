@@ -3,8 +3,7 @@ Repositorio que responsavel por lidar com os pagamentos dos clientes ao realizar
 
 Ederson Ribeiro Paz
 
-OBS: Necessario ajustar arquivo.
-Foodie service-payment é um microsserviço projetado para gerenciar a fase de pagamento dos pedidos. Ele ouve eventos de solicitação de pagamento, atualizando o status do pedido para '' e se comunica com outros microsserviços para gerenciar o ciclo de vida da produção.
+
 
 ## Tabela de Conteúdos
 
@@ -19,7 +18,7 @@ Foodie service-payment é um microsserviço projetado para gerenciar a fase de p
 - [Utilização do RabbitMQ]()
 ## Introdução
 
-Foodie Production faz parte do projeto FoodieFlow, que visa otimizar o processo de gerenciamento de pedidos de alimentos. Este microsserviço é responsável por rastrear pedidos que estão na fase de produção e garantir que sejam atualizados e comunicados a outras partes do sistema.
+Foodie service-payment é um microsserviço projetado para gerenciar a fase de pagamento dos pedidos. Ele escuta eventos de solicitação de pagamento, atualizando o status do pedido para '' e se comunica com outros microsserviços para gerenciar o ciclo de vida da produção.
 
 ## Funcionalidades
 
@@ -32,7 +31,7 @@ Foodie Production faz parte do projeto FoodieFlow, que visa otimizar o processo 
 
 - NestJS
 - TypeScript
-- SQS (Amazon Simple Queue Service)
+- AMQP (Advanced Message Queuing Protocol)
 - Jest (para testes)
 - Eslint e Prettier (para qualidade de código)
 - Docker

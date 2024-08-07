@@ -222,15 +222,15 @@ O RabbitMQ foi escolhido como sistema principal de mensageria por suportar difer
 ## Conclusão
 A adoção do SAGA coreografado em conjunto com o RabbitMQ proporciona uma solução técnica robusta para a coordenação de transações distribuídas em ambientes de microsserviços. Essa combinação oferece uma arquitetura escalável, resiliente e flexível, capaz de atender às demandas de sistemas complexos, dinâmicos e com serviços mais independentes.
 
-## Links com os relatórios dos processamentos do OWASP ZAP (antes e após a correção);
+## Relatórios dos processamentos do OWASP ZAP (antes e após a correção);
 Antes da correção: https://github.com/jobsonribeiro/service-payment/tree/dev/Relatorio/2024-07-02-ZAP-Report-
 
 Após correção: https://github.com/jobsonribeiro/service-payment/tree/dev/Relatorio/2024-07-04-ZAP-Report-
 
-## Link com o relatório RIPD do sistema;
+## Relatório RIPD do sistema;
 Verificar com o grupo o que seria.
 
-## Link para o desenho da arquitetura;
+## Desenho da arquitetura;
 ![desenho_arquitetura_aws](https://github.com/user-attachments/assets/0f68a272-6a0d-49f0-934f-4358ec973f3e)
 
 ## Link para um vídeo com:

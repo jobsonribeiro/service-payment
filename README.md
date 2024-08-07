@@ -228,7 +228,9 @@ Após correção: https://github.com/jobsonribeiro/service-payment/tree/dev/Rela
 
 ## Link com o relatório RIPD do sistema;
 Verificar com o grupo o que seria.
+
 ## Link para o desenho da arquitetura;
-Pegar com o Guilherme.
+![desenho_arquitetura_aws](https://github.com/user-attachments/assets/0f68a272-6a0d-49f0-934f-4358ec973f3e)
+
 ## Link para um vídeo com:
 Precisa ser produzido.

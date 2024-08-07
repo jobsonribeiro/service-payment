@@ -2,11 +2,11 @@
 Repositorio que responsavel por lidar com os pagamentos dos clientes ao realizar a entrega
 
 # Equipe
-Guilherme Marchesi Endrigo *<endrigo.guilherme@hotmail.com>*
-Edgar Menezes e Silva *<edgar.menezes41@gmail.com>*
-Luan Pereira Santos *<luanpereira.main@gmail.com>*
-Jobson Ribeiro Ferreira de Sousa *<jobson.analistati@gmail.com>*
-Ederson Ribeiro Paz *<edersonpaz.jbz@gmail.com>*
+- Guilherme Marchesi Endrigo *<endrigo.guilherme@hotmail.com>*
+- Edgar Menezes e Silva *<edgar.menezes41@gmail.com>*
+- Luan Pereira Santos *<luanpereira.main@gmail.com>*
+- Jobson Ribeiro Ferreira de Sousa *<jobson.analistati@gmail.com>*
+- Ederson Ribeiro Paz *<edersonpaz.jbz@gmail.com>*
 
 ## Tabela de Conteúdos
 

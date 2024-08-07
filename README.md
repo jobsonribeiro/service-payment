@@ -1,9 +1,8 @@
 # service-payment
 Repositorio que responsavel por lidar com os pagamentos dos clientes ao realizar a entrega
 
+# Equipe
 Ederson Ribeiro Paz
-
-
 
 ## Tabela de Conteúdos
 
@@ -52,7 +51,7 @@ Foodie service-payment é um microsserviço projetado para gerenciar a fase de p
 
     ```bash
     git clone https://github.com/jobsonribeiro/service-payment
-    cd foodie_production
+    cd foodie_payment
     ```
 
 2. Instale as dependências:
@@ -92,11 +91,11 @@ Para executar a aplicação usando Docker, você pode usar o Dockerfile fornecid
 1 . Construa a imagem Docker:
 
 ```bash
-docker build -t foodie_production .
+docker build -t foodie_payment .
 ```
 2 . Execute o container Docker:
 ```bash
-docker run -d -p 3000:3000 --env-file .env foodie_production
+docker run -d -p 3000:3000 --env-file .env foodie_payment
 ```
 
 Isso iniciará a aplicação no modo de produção no porto 3000.

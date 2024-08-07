@@ -124,7 +124,7 @@ Antes da correção: https://github.com/jobsonribeiro/service-payment/tree/dev/R
 Após correção: https://github.com/jobsonribeiro/service-payment/tree/dev/Relatorio/2024-07-04-ZAP-Report-
 
 ## Relatório RIPD do sistema;
-Verificar com o grupo o que seria.
+[RIPD FoddieFLow.pdf](https://github.com/user-attachments/files/16534638/RIPD.FoddieFLow.pdf)
 
 ## Desenho da arquitetura;
 ![desenho_arquitetura_aws](https://github.com/user-attachments/assets/0f68a272-6a0d-49f0-934f-4358ec973f3e)
